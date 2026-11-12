@@ -28,5 +28,17 @@
         "nombre": "Puesto Mercado Libre",
         "estado": "AVAILABLE",
         "turnoActualId": null
+    },
+    {
+        "id": 6,
+        "nombre": "Puesto Ford",
+        "estado": "AVAILABLE",
+        "turnoActualId": null
+    },
+    {
+        "id": 7,
+        "nombre": "Puesto Ferrari",
+        "estado": "AVAILABLE",
+        "turnoActualId": null
     }
 ]

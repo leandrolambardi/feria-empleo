@@ -9,4 +9,6 @@ router.get('/', puestoController.obtenerTodos);
 
 router.get('/:id', puestoController.obtenerPorId);
 
+router.post('/', puestoController.crear);
+
 module.exports = router;

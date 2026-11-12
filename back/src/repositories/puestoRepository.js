@@ -10,7 +10,6 @@ async function obtenerTodos() {
 }
 
 
-
 async function obtenerPorId(id) {
     const contenido = await fs.readFile(archivo, 'utf-8');
     const puestos = JSON.parse(contenido);
@@ -18,8 +17,23 @@ async function obtenerPorId(id) {
     return puestos.find(puesto => puesto.id === id);
 }
 
+async function crear(puesto) {
+    const contenido = await fs.readFile(archivo, 'utf-8');
+    const puestos = JSON.parse(contenido);
+
+    puestos.push(puesto);
+
+    await fs.writeFile(
+        archivo,
+        JSON.stringify(puestos, null, 4),
+        'utf-8'
+    );
+
+    return puesto;
+}
 
 module.exports = {
     obtenerTodos,
-    obtenerPorId
+    obtenerPorId,
+    crear
 };

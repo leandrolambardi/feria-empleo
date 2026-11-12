@@ -34,12 +34,24 @@ async function obtenerPorId(req, res) {
     }
 }
 
+async function crear(req, res) {
+    try {
+        const puesto = await puestoService.crear(req.body.nombre);
 
+        res.status(201).json(puesto);
+
+    } catch (error) {
+        res.status(500).json({
+            mensaje: 'Error al crear el puesto'
+        });
+    }
+}
 
 
 
 
 module.exports = {
     obtenerTodos,
-    obtenerPorId
+    obtenerPorId,
+    crear
 };
