@@ -1,0 +1,32 @@
+[
+    {
+        "id": 1,
+        "nombre": "Puesto YPF",
+        "estado": "AVAILABLE",
+        "turnoActualId": null
+    },
+    {
+        "id": 2,
+        "nombre": "Puesto Techint",
+        "estado": "AVAILABLE",
+        "turnoActualId": null
+    },
+    {
+        "id": 3,
+        "nombre": "Puesto Toyota",
+        "estado": "AVAILABLE",
+        "turnoActualId": null
+    },
+    {
+        "id": 4,
+        "nombre": "Puesto Siemens",
+        "estado": "AVAILABLE",
+        "turnoActualId": null
+    },
+    {
+        "id": 5,
+        "nombre": "Puesto Mercado Libre",
+        "estado": "AVAILABLE",
+        "turnoActualId": null
+    }
+]
